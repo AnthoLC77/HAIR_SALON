@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: solid 1px red;
 }
 
 body {
@@ -57,18 +56,20 @@ nav ul li hr {
 
 nav ul li  {
     font-size: 1.5rem;
+
 }
 
 nav ul li:first-child a {
     font-weight: bold;
+    
 }
+
 
 /* --------------------- */
 /* SECTION read_more_container */
 .top_container {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     margin: 0 2rem 0 4.3rem;
 }
 
@@ -162,5 +163,53 @@ nav ul li:first-child a {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 70%;
+}
+
+/* Our Servive */
+section hr {
+    width: 100%;
+    color: #8e8e8e;
+
+}
+
+.Our_service_container h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+/* .Our_service_container {
+    display: flex;
+} */
+
+.container-icon-our-service {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  
+    
+    
+}
+
+.card-icon-our-service {
+    border: 1px solid  #8e8e8e;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.card-icon-our-service p {
+    /* text-align: center; */
+    color: #8e8e8e;
+    font-size: 1.8rem;
+}
+
+.container-icon-our-service img {
+    width: 120px;
+   
 }
 
