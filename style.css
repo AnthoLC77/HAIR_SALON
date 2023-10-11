@@ -39,10 +39,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    
 }
 
 nav ul li a:hover {
-    color: #8cb6c7;
+    color: #8e8e8e;
 }
 
 nav ul li img {
@@ -58,7 +59,12 @@ nav ul li  {
     font-size: 1.5rem;
 }
 
-/* section read_more_container */
+nav ul li:first-child a {
+    font-weight: bold;
+}
+
+/* --------------------- */
+/* SECTION read_more_container */
 .top_container {
     display: flex;
     justify-content: space-around;
@@ -69,35 +75,32 @@ nav ul li  {
 /* --------------------- */
 /* Descrption left */
 
-.desciption-left {
+.description-left {
     display: flex;
     flex-direction: column;
     width: 40%;
     align-items: self-start;
     justify-content: space-evenly;
     padding: 2rem 0;
-
-
-
     
 }
 
-.desciption-left p {
+.description-left p {
     width: 70%;
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
-.desciption-left h2 {
+.description-left h2 {
     font-size: 5rem;
     width: 20rem
 }
 
-.desciption-left button {
+.description-left button, .description-right button {
     padding: 1rem 2rem;
     background-color: white;
-    border: solid 1px gray;
-    font-size: 1.2rem;
+    border: solid 1px #8e8e8e;
+    font-size: 2rem;
 }
 
 .container-photo-read-more {
@@ -120,4 +123,44 @@ nav ul li  {
 }
 
 
+/* --------------------- */
+/* Middler container */
+
+.middler_container{
+    display: flex;
+}
+.middler_container img{
+    width: 25%;
+}
+
+/* Bottom container */
+
+.bottom_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+}
+
+.bottom_container img {
+    width: 40%;
+}
+.description-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0;
+    
+}
+
+.description-right h2 {
+   font-size: 3rem;
+   color: #8e8e8e;
+}
+
+.description-right p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 70%;
+}
 
