@@ -8,7 +8,8 @@ body {
     width: 100vw;
     height: 100vw;
 }
-
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
 /* HEADER */
 
 header {
@@ -16,18 +17,21 @@ header {
     justify-content: space-between;
     background-color: #191919;
     color: white;
-    padding: 2rem 8rem
+    padding: 2rem 8rem;
+    flex-wrap: wrap;
+    
     
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -51,7 +55,6 @@ nav ul li img {
 
 nav ul li hr {
     color: white;
-    margin-top: 0.3rem;
 }
 
 nav ul li  {
@@ -65,16 +68,14 @@ nav ul li:first-child a {
 }
 
 
-/* --------------------- */
-/* SECTION read_more_container */
+
+/* SECTION REAS MORE CONTAINER */
+
 .top_container {
     display: flex;
     justify-content: space-around;
-    margin: 0 2rem 0 4.3rem;
+    
 }
-
-/* --------------------- */
-/* Descrption left */
 
 .description-left {
     display: flex;
@@ -82,7 +83,7 @@ nav ul li:first-child a {
     width: 40%;
     align-items: self-start;
     justify-content: space-evenly;
-    padding: 2rem 0;
+    padding: 3rem 0;
     
 }
 
@@ -90,10 +91,11 @@ nav ul li:first-child a {
     width: 70%;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin: 1rem 0;
 }
 
 .description-left h2 {
-    font-size: 5rem;
+    font-size: 7rem;
     width: 20rem
 }
 
@@ -102,6 +104,7 @@ nav ul li:first-child a {
     background-color: white;
     border: solid 1px #8e8e8e;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .container-photo-read-more {
@@ -111,8 +114,11 @@ nav ul li:first-child a {
 }
 
 .container-photo-read-more img {
-    
+    width: 100%;
+    /* min-width: 158px;
+    min-height: 158px; */
     padding: 1rem;
+
 }
 
 .photo-read-more-top, .photo-read-more-bottom {
@@ -120,12 +126,16 @@ nav ul li:first-child a {
 }
 
 .icon-read-more {
-    margin: auto 0;
+    margin: auto 0 ; 
+}
+
+.icon-read-more img {
+    width: 40px;
 }
 
 
-/* --------------------- */
-/* Middler container */
+
+/* MIDDLER CONTAINER */
 
 .middler_container{
     display: flex;
@@ -134,16 +144,19 @@ nav ul li:first-child a {
     width: 25%;
 }
 
-/* Bottom container */
+
+/* BOTTOM CONTAINER */
 
 .bottom_container {
     display: flex;
     justify-content: space-evenly;
-    margin: 4rem 0;
+    margin: 8rem 0;
 }
 
 .bottom_container img {
     width: 40%;
+    height: 40%;
+    
 }
 .description-right {
     width: 40%;
@@ -163,31 +176,29 @@ nav ul li:first-child a {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 70%;
+    margin: 1rem 0;
 }
 
-/* Our Servive */
+
+/* OUR SERVICE */
+
 section hr {
     width: 100%;
     color: #8e8e8e;
 
 }
 
-.Our_service_container h2 {
+.our_service_container h2 {
     text-align: center;
     font-size: 3rem;
     margin: 3rem 0;
 }
 
-/* .Our_service_container {
-    display: flex;
-} */
 
 .container-icon-our-service {
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
-  
-    
     
 }
 
@@ -203,13 +214,69 @@ section hr {
 }
 
 .card-icon-our-service p {
-    /* text-align: center; */
     color: #8e8e8e;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
 }
+
 
 .container-icon-our-service img {
     width: 120px;
    
 }
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 1148px) {
+
+    header {
+       justify-content: center;
+       /* padding: 1rem 4rem; */
+       text-align: center;
+    }
+
+    header ul {
+        margin-top: 1rem;
+    }
+
+    .description-left p, .description-right p {
+        width: 100%;
+    }
+
+    .description-left h2 {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .top_container, .bottom_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .description-left, .description-right {
+        align-items: center;
+    }
+
+    .description-left, .description-left h2, .description-right, .description-right h2 {
+        width: 100%;
+        font-size: 3rem;
+        
+    }
+
+    .container-photo-read-more {
+        width: 100%;
+    }
+
+   
+    
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
 
