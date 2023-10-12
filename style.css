@@ -9,6 +9,287 @@ body {
     height: 100vw;
 }
 
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    color: white;
+    padding: 2rem 8rem;
+    flex-wrap: wrap;
+
+
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: #8e8e8e;
+}
+
+nav ul li img {
+    width: 24px;
+}
+
+nav ul li hr {
+    color: white;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+
+}
+
+nav ul li:first-child a {
+    font-weight: bold;
+
+}
+
+
+
+/* SECTION REAS MORE CONTAINER */
+
+.top_container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.description-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: self-start;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+
+}
+
+.description-left p {
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+.description-left h2 {
+    font-size: 7rem;
+    width: 20rem
+}
+
+.description-left button,
+.description-right button {
+    padding: 1rem 2rem;
+    background-color: white;
+    border: solid 1px #8e8e8e;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.container-photo-read-more {
+    display: flex;
+    width: 40%;
+
+}
+
+.container-photo-read-more img {
+    width: 100%;
+    /* min-width: 158px;
+    min-height: 158px; */
+    padding: 1rem;
+
+}
+
+.photo-read-more-top,
+.photo-read-more-bottom {
+    margin: 4rem 0;
+}
+
+.icon-read-more {
+    margin: auto 0;
+}
+
+.icon-read-more img {
+    width: 40px;
+}
+
+
+
+/* MIDDLER CONTAINER */
+
+.middler_container {
+    display: flex;
+}
+
+.middler_container img {
+    width: 25%;
+}
+
+
+/* BOTTOM CONTAINER */
+
+.bottom_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem 0;
+}
+
+.bottom_container img {
+    width: 40%;
+    height: 40%;
+
+}
+
+.description-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0;
+
+}
+
+.description-right h2 {
+    font-size: 3rem;
+    color: #8e8e8e;
+}
+
+.description-right p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 70%;
+    margin: 1rem 0;
+}
+
+
+/* OUR SERVICE */
+
+section hr {
+    width: 100%;
+    color: #8e8e8e;
+
+}
+
+.our_service_container h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+
+.container-icon-our-service {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+
+.card-icon-our-service {
+    border: 1px solid #8e8e8e;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.card-icon-our-service p {
+    color: #8e8e8e;
+    font-size: 1.9rem;
+}
+
+
+.container-icon-our-service img {
+    width: 120px;
+
+}
+
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 1148px) {
+
+    header {
+        justify-content: center;
+        /* padding: 1rem 4rem; */
+        text-align: center;
+    }
+
+    header ul {
+        margin-top: 1rem;
+    }
+
+    .description-left p,
+    .description-right p {
+        width: 100%;
+    }
+
+    .description-left h2 {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .top_container,
+    .bottom_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .description-left,
+    .description-right {
+        align-items: center;
+    }
+
+    .description-left,
+    .description-left h2,
+    .description-right,
+    .description-right h2 {
+        width: 100%;
+        font-size: 3rem;
+
+    }
+
+    .container-photo-read-more {
+        width: 100%;
+    }
+
+
+
+}
+
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
 section {
     padding: 50px 100px;
     width: 100%;
@@ -25,7 +306,7 @@ section h2 {
     width: 100%;
 }
 
-/* PORTFOLIO */ 
+/* PORTFOLIO */
 
 .portfolio_container {
     display: flex;
@@ -59,7 +340,7 @@ section h2 {
 
 .info_user {
     background-color: #ffffff;
-   /*height: 220px;*/
+    /*height: 220px;*/
     padding: 28px;
 }
 
@@ -116,7 +397,7 @@ section h2 {
 
 .card_what_we_do_left h3 {
     font-size: 3em;
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
 
 }
 
@@ -131,7 +412,7 @@ section h2 {
     object-fit: cover;
 }
 
-/* OUR TEAM */ 
+/* OUR TEAM */
 
 .our_team {
     display: flex;
@@ -180,7 +461,7 @@ section h2 {
 }
 
 
-/* CONTACT US */ 
+/* CONTACT US */
 
 .contact_us_container {
     width: 100%;
@@ -189,7 +470,7 @@ section h2 {
 .contact_us {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .contact_us img {
@@ -207,7 +488,8 @@ section h2 {
     width: 50%;
 }
 
-.contact_us_left form, .contact_us_left h3 {
+.contact_us_left form,
+.contact_us_left h3 {
     width: 100%;
 }
 
@@ -244,14 +526,14 @@ section h2 {
     margin-top: 30px;
 }
 
-/* FOOTER */ 
+/* FOOTER */
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 90px 90px 30px 90px ;
+    padding: 90px 90px 30px 90px;
     background-color: #191919;
     width: 100%;
 }
@@ -268,7 +550,7 @@ footer h4 {
 
 .social_bloc {
     display: flex;
-    
+
     justify-content: space-between;
     margin-bottom: 90px;
 }
@@ -280,7 +562,7 @@ footer h4 {
 
 .description_footer p {
     font-size: 1.2em;
-    color : #dcdcdc
+    color: #dcdcdc
 }
 
 .liste_lien_footer {
@@ -299,7 +581,7 @@ footer h4 {
 }
 
 .liste_contact_footer h4 {
-font-size: 1.9em;
+    font-size: 1.9em;
 }
 
 .contact_p {
@@ -307,7 +589,10 @@ font-size: 1.9em;
     font-size: 1.1em;
 }
 
-.fa-facebook, .fa-skype, .fa-twitter, .fa-invision {
+.fa-facebook,
+.fa-skype,
+.fa-twitter,
+.fa-invision {
     color: white;
     font-size: 1.5em;
     margin: 15px 10px 0 0;
@@ -319,7 +604,7 @@ font-size: 1.9em;
 }
 
 
-/* MEDIA QUERIES */ 
+/* MEDIA QUERIES */
 
 
 
@@ -328,11 +613,15 @@ font-size: 1.9em;
         padding: 50px 50px;
     }
 
-    .porfolio_user_container, .social_bloc, .contact_us, .card_what_we_do {
+    .porfolio_user_container,
+    .social_bloc,
+    .contact_us,
+    .card_what_we_do {
         flex-direction: column;
     }
 
-    .liste_lien_footer, .liste_contact_footer {
+    .liste_lien_footer,
+    .liste_contact_footer {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -341,7 +630,13 @@ font-size: 1.9em;
     }
 
 
-    .card_user_portfolio, .our_team_user, .description_footer, .liste_lien_footer, .contact_us_left,.card_what_we_do_left, .card_what_we_do img {
+    .card_user_portfolio,
+    .our_team_user,
+    .description_footer,
+    .liste_lien_footer,
+    .contact_us_left,
+    .card_what_we_do_left,
+    .card_what_we_do img {
         width: 100%;
     }
 
@@ -350,7 +645,7 @@ font-size: 1.9em;
     }
 
     .info_what_we_do {
-        position:initial;
+        position: initial;
     }
 
 
@@ -380,7 +675,8 @@ font-size: 1.9em;
         text-align: center;
     }
 
-    .liste_lien_footer, .liste_contact_footer {
+    .liste_lien_footer,
+    .liste_contact_footer {
         width: 42%;
     }
 
@@ -390,15 +686,23 @@ font-size: 1.9em;
 }
 
 @media (min-width: 600px) and (max-width: 992px) {
-    .porfolio_user_container, .social_bloc {
+
+    .porfolio_user_container,
+    .social_bloc {
         flex-direction: column;
     }
 
-    .card_user_portfolio, .our_team_user, .description_footer, .liste_lien_footer, .contact_us_left,.card_what_we_do_left {
+    .card_user_portfolio,
+    .our_team_user,
+    .description_footer,
+    .liste_lien_footer,
+    .contact_us_left,
+    .card_what_we_do_left {
         width: 46%;
     }
 
-    .porfolio_user_container, .our_team_user_container {
+    .porfolio_user_container,
+    .our_team_user_container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -423,7 +727,8 @@ font-size: 1.9em;
         margin: 0 0 20px 0;
     }
 
-    .liste_lien_footer, .liste_contact_footer {
+    .liste_lien_footer,
+    .liste_contact_footer {
         display: flex;
         flex-direction: column;
         align-items: center;
