@@ -16,6 +16,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #191919;
   color: white;
   padding: 2rem 8rem;
@@ -62,7 +63,7 @@ nav ul li:first-child a {
   font-weight: bold;
 }
 
-/* SECTION REAS MORE CONTAINER */
+/* SECTION READ MORE CONTAINER */
 
 .top_container {
   display: flex;
@@ -97,6 +98,7 @@ nav ul li:first-child a {
   border: solid 1px #8e8e8e;
   font-size: 2rem;
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .container-photo-read-more {
@@ -106,8 +108,6 @@ nav ul li:first-child a {
 
 .container-photo-read-more img {
   width: 100%;
-  /* min-width: 158px;
-    min-height: 158px; */
   padding: 1rem;
 }
 
@@ -183,6 +183,7 @@ section hr {
 .container-icon-our-service {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
 }
 
@@ -194,6 +195,7 @@ section hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+ 
 }
 
 .card-icon-our-service p {
@@ -210,12 +212,11 @@ section hr {
 @media screen and (max-width: 1148px) {
   header {
     justify-content: center;
-    /* padding: 1rem 4rem; */
-    text-align: center;
+    padding: 2rem 4rem;
   }
-
-  header ul {
-    margin-top: 1rem;
+  
+  header ul li{
+    margin-left: 1rem;
   }
 
   .description-left p,
@@ -226,9 +227,24 @@ section hr {
   .description-left h2 {
     font-size: 5rem;
   }
+  
 }
 
 @media screen and (max-width: 768px) {
+
+  header {
+    text-align: center;
+  }
+  
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  header nav ul li{ 
+
+    padding: 0.3rem 0;
+  }
+
   .top_container,
   .bottom_container {
     flex-direction: column;
@@ -251,6 +267,15 @@ section hr {
 
   .container-photo-read-more {
     width: 100%;
+  }
+
+  .photo-read-more-top, .photo-read-more-bottom {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  .icon-read-more {
+    margin-bottom: 2rem;
   }
 }
 
@@ -485,7 +510,7 @@ section h2 {
   width: 90%;
   padding: 10px;
   background-color: white;
-  border: 1px solid #969696;
+  border: 1px solid #8e8e8e;
   font-size: 1.4em;
   margin-top: 30px;
 }
